@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custome css  -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="main-parent">
+        <div class="form-wrap">
+            <form method="" action="" name="reg_form" onsubmit="return validate()">
+                <h1>Create Your BookMyTrip Account</h1>
+                <div class="single-input">
+                    <label for="html">First Name</label><br>
+                    <input id="fname" type="text" name="FName" placeholder="Enter Your First name" >
+                </div>
+                <div class="single-input">
+                    <label for="html">Last name</label><br>
+                    <input id="lname" name="LName" type="text" placeholder="Enter Your Last name" >
+                </div>
+                <div class="single-input">
+                    <label for="html">Mobile Number</label><br>
+                    <input id="cpass" name="MNo" type="number" placeholder="Mobile Number" >
+                </div>
+                <div class="single-input">
+                    <label for="html">Email Address</label><br>
+                    <input id="email" name="EMail" type="email" placeholder="Enter Your Email Address" >
+                </div>
+                <div class="single-input">
+                    <label for="html">Password</label><br>
+                    <input id="pass" name="PWD" type="password" placeholder=" Enter Password" >
+                </div>
+                <div class="single-inputss">
+                    <legend>Gender</legend>
+                    <div>
+                    <input type="radio" name="gender" id="male" >
+                    <label for="male">Male</label>                             
+                    <input type="radio" name="gender" id="female" >
+                    <label >Female</label>       
+                    </div>
+                <div class="single-input">
+                    <label for="city">City</label><br>
+                    <select  name="city" id="city" required>
+                        <option value="select city" class="opt" value="volvo">Choose....</option>
+                        <option class="opt" value="saab">Chennai</option>
+                        <option class="opt" value="opel">Madurai</option>
+                        <option class="opt" value="audi">Salem</option>
+                        <option class="opt" value="audi">Trichy</option>
+                      </select>
+                </div>
+                <div>
+                    <input type="checkbox" name="CheckBox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I would like to be kept informed of special promotions and offers by BookMyTrip.</label>
+                </div><br><br>
+                <div class="submit-button">
+                    <button class="button">REGISTER</button>
+                </div>
+                <div class="account-have">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
